@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="./presup.css">
+</head>
+
+<body>
+    <div class="principal">
+        <h1>Gasto Semanal</h1>
+        <h3 id="alert"></h3>
+        <div class="contenedor">
+            <div class="cont-1">
+                <h2>Añade tus gastos aqui 👇</h2>
+                <form action="">
+                    <label for="nombre">Gasto:</label> <br>
+                    <input type="text" placeholder="Nombre de Gasto" id="gasto" name="gasto" required><br>
+                    <label for="nombre">Cantidad:</label> <br>
+                    <input type="number" placeholder="Cantidad en $" id="cantidad" name="cantidad" required><br>
+                    <input type="button" value="Agregar" id="boton" onclick= "validar ()" >
+                </form>
+            </div>
+            <div class="cont-2">
+                <h2>Listado 👇</h2>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                    </tbody>
+                </table>
+                <p class="presupuesto"><b>Presupuesto:</b> $</p>
+                <p class="saldo"><b>Saldo: </b> $</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./presup.js"> </script>
+</body>
+
+</html>
