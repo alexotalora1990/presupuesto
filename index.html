@@ -9,18 +9,24 @@
 </head>
 
 <body>
-    <div class="principal">
+    <div class="ventana" id="ventanaPresupuesto">
+        <h2>👇Digite el presupuesto👇</h2>
+        <input type="text" placeholder="presupuesto" id="presupuesto" name="presupuesto" required>
+        <input type="button" value="Guardar" id="botonPresupuesto" onclick="establecerPresupuesto()">
+    </div>
+    <h3 id="alert"></h3>
+    <div class="principal" id="ventanaGastos">
         <h1>Gasto Semanal</h1>
-        <h3 id="alert"></h3>
+
         <div class="contenedor">
-            <div class="cont-1">
+            <div class="cont-1" id="validarGastos">
                 <h2>Añade tus gastos aqui 👇</h2>
                 <form action="">
                     <label for="nombre">Gasto:</label> <br>
-                    <input type="text" placeholder="Nombre de Gasto" id="gasto" name="gasto" required><br>
+                    <input type="text" placeholder="Nombre de Gasto" id="nombre" name="gasto" required><br>
                     <label for="nombre">Cantidad:</label> <br>
-                    <input type="number" placeholder="Cantidad en $" id="cantidad" name="cantidad" required><br>
-                    <input type="button" value="Agregar" id="boton" onclick= "validar ()" >
+                    <input type="" placeholder="Cantidad en $" id="precio" name="cantidad" required><br>
+                    <input type="button" value="Agregar" id="boton" onclick="agregarGastos ()">
                 </form>
             </div>
             <div class="cont-2">
@@ -37,9 +43,13 @@
                     <tbody id="tabla">
                     </tbody>
                 </table>
-                <p class="presupuesto"><b>Presupuesto:</b> $</p>
-                <p class="saldo"><b>Saldo: </b> $</p>
-
+                <div id="pre">
+                    <p id="" class="presupuesto"><strong>Presupuesto:</strong> <span
+                            id="mostrarPresupuesto"></span></span></p>
+                </div>
+              
+                    <p class="saldo" id="saldo"><b>Saldo: </b> <span id="mostrarSaldo"></span></p>
+            
             </div>
         </div>
     </div>
