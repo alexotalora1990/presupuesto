@@ -1,16 +1,34 @@
 *{
     margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+
 
 }
 .principal{
-    background-color: blanchedalmond;
-    width: 60%;
+    background-color: rgb(197, 193, 188);
+    width: 80%;
     margin: 0 auto;
     padding: 1%;
 }
 h1{
     text-align: center;
     margin-top: 1%;
+}
+.ventana{
+
+    background-color: #a5ffa5 ;
+    border :  solid 2px black;
+    width: 40%;
+    text-align: center;
+    padding: 33px;
+    min-height: 100px;
+    font-size: 120%;
+
+    border-radius: 10px;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    
 }
 .contenedor{
     border: solid 2px black;
@@ -25,7 +43,8 @@ h1{
 h2{
 font-size: 150%;
 color: rgb(147, 150, 150);
-text-align: center;
+/* text-align: center; */
+margin-left: 10%;
 }
 .cont-1{
     font-size: 130%;
@@ -59,7 +78,7 @@ input[type="button"] {
     
 }
 .saldo{
-    background-color: #ee7a769a;
+    background-color: #00800067;
     width: 80%;
     height: 10%;
     border-radius: 6px;
@@ -68,7 +87,7 @@ input[type="button"] {
 }
 #alert {
     color: #faf9f9;
-    /* position: relative; */
+    position: relative;
     font-size: 300%;
     background-color: #ff0000;
     text-align: center;
@@ -76,9 +95,9 @@ input[type="button"] {
 table {
     text-align: center;
     margin-top: 1%;
-    width: 50%;
+    width: 90%;
     border-collapse: collapse;
-    margin-left: 25%;
+    margin-left: 5%;
     margin-bottom: 5%;
     color: #050505;
 
@@ -88,4 +107,49 @@ th {
     height: 40px;
 
 }
-
+td{
+    background-color: #92e796;
+}
+@media(max-width: 1400px){
+   h2{
+        margin-left: 2%;
+        font-size: 140%;
+    }
+}
+@media(max-width: 1100px){
+    h2{
+        font-size: 120%;
+      
+        }
+        .principal{
+            
+            width: 90%;
+            
+        }
+}
+@media(max-width:950px){
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width:600px){
+    .principal{
+            
+        width: 100%;
+        
+    }
+    input{
+        width: 90%;
+    }
+    table{
+        width: 95%;
+    }
+    .presupuesto, .saldo{
+        width: 90%;
+    }
+    input[type="button"] {
+        width: 30%;
+        height: 30px;
+        font-size: 80%;
+    }
+}
