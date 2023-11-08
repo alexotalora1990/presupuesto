@@ -51,7 +51,7 @@ function agregarGastos(){
   else if(saldoDisponible>saldoInicial*0.2){
     document.getElementById("saldo").style.backgroundColor = "#00800067"; 
   }
-
+actualizarBoton() ;
   
 }
 
@@ -63,6 +63,7 @@ function eliminarGasto(index, precio) {
    if(saldoDisponible>saldoInicial*0.2){
     document.getElementById("saldo").style.backgroundColor = "#00800067"; 
   }
+  actualizarBoton() ;
 }
 
 function agregarTabla() {
@@ -90,6 +91,14 @@ function agregarTabla() {
   document.getElementById("nombre").value = "";
   document.getElementById("precio").value = "";
 }
+function actualizarBoton() {
+  if (saldoDisponible > 0) {
+    document.getElementById("boton").disabled = false;
+  } else {
+    document.getElementById("boton").disabled = true; 
+  }
+}
+
 
 
 
