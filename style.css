@@ -131,6 +131,14 @@ td{
     .contenedor{
         grid-template-columns: repeat(1, 1fr);
     }
+    .ventana {
+
+    width: 70%;
+    position: absolute;
+left: 10%;
+top: 10%;
+padding: 2%;
+}
 }
 @media(max-width:600px){
     .principal{
@@ -151,5 +159,13 @@ td{
         width: 30%;
         height: 30px;
         font-size: 80%;
+    }
+      .ventana {
+
+        width: 90%;
+        position: absolute;
+    left: 2%;
+    top: 10%;
+    padding: 2%;
     }
 }
