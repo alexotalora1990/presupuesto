@@ -1,23 +1,26 @@
-*{
+* {
     margin: 1%;
     font-family: Arial, Helvetica, sans-serif;
 
 
 }
-.principal{
+
+.principal {
     background-color: rgb(197, 193, 188);
     width: 80%;
     margin: 0 auto;
     padding: 1%;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 1%;
 }
-.ventana{
 
-    background-color: #a5ffa5 ;
-    border :  solid 2px black;
+.ventana {
+
+    background-color: #a5ffa5;
+    border: solid 2px black;
     width: 40%;
     text-align: center;
     padding: 33px;
@@ -28,9 +31,10 @@ h1{
     position: absolute;
     left: 25%;
     top: 10%;
-    
+
 }
-.contenedor{
+
+.contenedor {
     border: solid 2px black;
     border-radius: 10px;
     width: auto;
@@ -40,51 +44,58 @@ h1{
     background-color: #ffffff;
     padding: 2%;
 }
-h2{
-font-size: 150%;
-color: rgb(147, 150, 150);
-/* text-align: center; */
-margin-left: 10%;
+
+h2 {
+    font-size: 150%;
+    color: rgb(147, 150, 150);
+    /* text-align: center; */
+    margin-left: 10%;
 }
-.cont-1{
+
+.cont-1 {
     font-size: 130%;
 }
-.cont-2{
+
+.cont-2 {
     font-size: 130%;
 }
-input{
-width: 80%;
-height: 40px;
-border-radius: 8px;
+
+input {
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
 
 }
+
 input[type="button"] {
     width: 40%;
     height: 50px;
     border-radius: 8px;
-       color: #ffffff;
+    color: #ffffff;
     font-size: 120%;
     background: #2d62fd;
 
     border: none;
 }
 
-.presupuesto{
+.presupuesto {
     background-color: #5076e9ab;
     width: 80%;
     height: 10%;
     border-radius: 6px;
     padding: 2%;
-    
+
 }
-.saldo{
+
+.saldo {
     background-color: #00800067;
     width: 80%;
     height: 10%;
     border-radius: 6px;
     padding: 2%;
-   
+
 }
+
 #alert {
     color: #faf9f9;
     position: relative;
@@ -92,6 +103,7 @@ input[type="button"] {
     background-color: #ff0000;
     text-align: center;
 }
+
 table {
     text-align: center;
     margin-top: 1%;
@@ -102,36 +114,43 @@ table {
     color: #050505;
 
 }
+
 th {
     border: solid 2px black;
     height: 40px;
 
 }
-td{
+
+td {
     background-color: #92e796;
 }
-@media(max-width: 1400px){
-   h2{
+
+@media(max-width: 1400px) {
+    h2 {
         margin-left: 2%;
         font-size: 140%;
     }
 }
-@media(max-width: 1100px){
-    h2{
+
+@media(max-width: 1100px) {
+    h2 {
         font-size: 120%;
-      
-        }
-        .principal{
-            
-            width: 90%;
-            
-        }
+
+    }
+
+    .principal {
+
+        width: 90%;
+
+    }
 }
-@media(max-width:950px){
-    .contenedor{
+
+@media(max-width:950px) {
+    .contenedor {
         grid-template-columns: repeat(1, 1fr);
     }
-    .ventana {
+}
+.ventana {
 
     width: 70%;
     position: absolute;
@@ -139,28 +158,34 @@ left: 10%;
 top: 10%;
 padding: 2%;
 }
-}
-@media(max-width:600px){
-    .principal{
-            
+
+@media(max-width:600px) {
+    .principal {
+
         width: 100%;
-        
+
     }
-    input{
+
+    input {
         width: 90%;
     }
-    table{
+
+    table {
         width: 95%;
     }
-    .presupuesto, .saldo{
+
+    .presupuesto,
+    .saldo {
         width: 90%;
     }
+
     input[type="button"] {
         width: 30%;
         height: 30px;
         font-size: 80%;
     }
-      .ventana {
+
+    .ventana {
 
         width: 90%;
         position: absolute;
