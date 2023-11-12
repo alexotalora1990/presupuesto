@@ -90,7 +90,7 @@ function agregarTabla() {
     let cell3 = row.insertCell(2);
     cell1.innerHTML = elemento.nombre;
     
-    cell2.innerHTML =`$${elemento.precio}`;
+   cell2.innerHTML =pesoCol(elemento.precio); 
   
     cell3.innerHTML = `<button onclick="eliminarGasto(${index}, ${elemento.precio})">Eliminar</button>`;
   });
